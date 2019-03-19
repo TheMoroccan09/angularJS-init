@@ -19,6 +19,11 @@
   "dependencies": {
     "@angular/router": "^0.2.0",
     "angular": "^1.6.10",
+    "angular-route": "^1.6.10",
     "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-webserver": "^0.9.1"
   }
 }

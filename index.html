@@ -4,33 +4,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
   <title>Angular JS init</title>
+
 </head>
 <body>
   <div ng-app="App" class="container" style="padding: 2rem">
-    <div ng-controller="HomeController">
-      <form name="frm" ng-submit="onSave()">
-          <div class="input-group">
-              <span class="input-group-addon">+</span>
-              <input type="text" name="telephone" ng-model="contact.tel" minLenght="10" maxlength="15" class="form-control" input-tel>
-              {{ frm.telephone.$error }}
-          </div>
-      </form>
-    </div>
-
-
+      <div ng-view></div>
   </div>
 
-  <script src="./node_modules/angular/angular.min.js"></script>
-  <script src="./node_modules/@angular/router/angular1/angular_1_router.js"></script>
+  <script src="../node_modules/angular/angular.min.js"></script>
+  <script src="../node_modules/angular-route/angular-route.min.js"></script>
+
   
-  <script src="./js/App.js"></script>
+  <script src="./app/app.js"></script>
   
   <!-- Controllers -->
-  <script src="./js/controllers/home.controller.js"></script>
+  <script src="./app/controllers/home.controller.js"></script>
 
-  <!-- Directives  -->
-  <script src="./js/directives/input-tel.directive.ts"></script>
 </body>
 </html>
