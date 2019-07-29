@@ -1,22 +1,49 @@
 angular
-    .module('App', ['ngRoute'])
-    .config(function($routeProvider, $locationProvider){
-        $routeProvider
-          .when('/', {
-            templateUrl: '../templates/pages/home.html',
-            controller: 'HomeController'
+    .module('App', ['ui.router'])
+    .config(function($stateProvider){
+        $stateProvider
+          .state({
+            name: 'home',
+            url: '/home',
+            templateUrl: './templates/pages/home.html'
           })
-          .when('/About', {
-            templateUrl: '../templates/pages/about.html',
-            controller: 'HomeController'
+          .state({
+            name: 'about',
+            url: '/about',
+            templateUrl: './templates/pages/about.html'
           })
-          .when('/Contact', {
-            templateUrl: '../templates/pages/contact.html',
-            controller: 'HomeController'
+          .state({
+            name: 'contact',
+            url: '/contact',
+            templateUrl: './templates/pages/contact.html'
           })
-          .otherwise({
-            templateUrl: '../templates/pages/404.html'
-          });
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      // Native Routing  ------------------------------------
+      // $routeProvider
+        //   .when('/', {
+        //     templateUrl: '../templates/pages/home.html',
+        //     controller: 'HomeController'
+        //   })
+        //   .when('/About', {
+        //     templateUrl: '../templates/pages/about.html',
+        //     controller: 'HomeController'
+        //   })
+        //   .when('/Contact', {
+        //     templateUrl: '../templates/pages/contact.html',
+        //     controller: 'HomeController'
+        //   })
+        //   .otherwise({
+        //     templateUrl: '../templates/pages/404.html'
+        //   });
 
         // $locationProvider.html5Mode(true);
     });

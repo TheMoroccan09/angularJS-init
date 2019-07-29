@@ -9,24 +9,24 @@
   <base href="/">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#!/">Home</a></li>
-        <li><a href="#!/About">About</a></li>
-        <li><a href="#!/Contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
 
 
   <div ng-app="App" class="container" style="padding: 2rem">
-      <div ng-view></div>
+    <header>
+      <nav>
+        <ul>
+          <li><a ui-sref="home">Home</a></li>
+          <li><a ui-sref="about">About</a></li>
+          <li><a ui-sref="contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>  
+    <ui-view></ui-view>
   </div>
 
   <script src="../node_modules/angular/angular.min.js"></script>
-  <script src="../node_modules/angular-route/angular-route.min.js"></script>
-
+  <!-- <script src="../node_modules/angular-route/angular-route.min.js"></script> Native router-->
+  <script src="../node_modules/@uirouter/angularjs/release/angular-ui-router.js"></script>
   
   <script src="./app/app.js"></script>
   

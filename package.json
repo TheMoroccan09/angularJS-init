@@ -18,6 +18,7 @@
   "homepage": "https://github.com/TheMoroccan09/angularJS-init#readme",
   "dependencies": {
     "@angular/router": "^0.2.0",
+    "@uirouter/angularjs": "^1.0.22",
     "angular": "^1.6.10",
     "angular-route": "^1.6.10",
     "bootstrap": "^4.3.1"
