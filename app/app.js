@@ -5,17 +5,26 @@ angular
           .state({
             name: 'home',
             url: '/home',
-            templateUrl: './templates/pages/home.html'
+            templateUrl: './templates/pages/home.html',
+            controller: 'HomeController'
           })
           .state({
             name: 'about',
             url: '/about',
-            templateUrl: './templates/pages/about.html'
+            templateUrl: './templates/pages/about.html',
+            controller: 'AboutController'
           })
           .state({
             name: 'contact',
             url: '/contact',
-            templateUrl: './templates/pages/contact.html'
+            templateUrl: './templates/pages/contact.html',
+            controller: 'ContactController'
+          })
+          .state({
+            name: 'form',
+            url: '/form',
+            templateUrl: './templates/pages/form.html',
+            controller: 'FormController'
           })
       
       

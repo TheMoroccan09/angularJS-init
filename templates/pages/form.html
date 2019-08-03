@@ -1,0 +1,15 @@
+<h1>{{ title }}</h1>
+<hr>
+<button ng-click="addUser()">Add User</button>
+<form>
+  <div ng-repeat="user in users">
+    <span class="serial-number">{{ $index + 1 }}.</span>
+    <label>first name</label>
+    <input type="text" ng-model="user.firstName">
+
+    <label>last name</label>
+    <input type="text" ng-model="user.lastName">
+
+    <button ng-click="removeUser(user)">Remove user</button>
+  </div>
+</form>
